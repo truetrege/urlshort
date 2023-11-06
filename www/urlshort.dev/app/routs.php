@@ -15,7 +15,9 @@
         'DELETE' => [
             '/api/url/short' => 'app\\c\\URLShortController::delete',
         ],
-        '_ERROR' => [
-            '_error' => "app\\c\\ErrorController::notFound",
-        ],
+        '_ERROR'=>[
+            '_error'=>"app\\c\\ErrorController::notFound"
+        ]
+
+
     ];
