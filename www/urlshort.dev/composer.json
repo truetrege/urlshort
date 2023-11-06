@@ -1,0 +1,22 @@
+{
+  "name": "truetrege/urlshort",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "truetrege",
+      "email": "mr.trege@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "app\\": "app"
+    },
+    "files": [
+      "app/functions.php"
+    ]
+  }
+}
