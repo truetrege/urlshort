@@ -7,6 +7,7 @@
 
         $routs = require_once 'app/routs.php';
 
+
         foreach ($routs[$method] as $key => $route) {
             if (preg_match('#^'.$key.'$#', $path, $matches)) {
                 array_shift($matches);

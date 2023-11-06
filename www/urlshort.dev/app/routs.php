@@ -1,9 +1,10 @@
 <?php
+
     return [
         'GET'    => [
-            '/api/url/short/(\w.*)' => 'app\\c\\URLShortController::get',
-            '/api/url/short'         => 'app\\c\\URLShortController::all',
-            '\/(\w.*)'              => 'app\\c\\URLShortController::redirect',
+            '/api/url/short/(\w{3,10})' => 'app\\c\\URLShortController::get',
+            '/api/url/short'            => 'app\\c\\URLShortController::all',
+            '\/(\w{3,10})'              => 'app\\c\\URLShortController::redirect',
         ],
         'POST'   => [
             '/api/url/short' => 'app\\c\\URLShortController::add',
@@ -17,5 +18,6 @@
         '_ERROR'=>[
             '_error'=>"app\\c\\ErrorController::notFound"
         ]
+
 
     ];
