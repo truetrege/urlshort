@@ -17,4 +17,5 @@
         '_ERROR'=>[
             '_error'=>"app\\c\\ErrorController::notFound"
         ]
+
     ];
