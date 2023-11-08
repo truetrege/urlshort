@@ -25,3 +25,14 @@ services:
             - ./mysql:/var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: secret
+    composer:
+        image: composer
+        network_mode: bridge
+        volumes:
+            - ./www/urlshort.dev:/www/urlshort.dev
+        working_dir: /www/urlshort.dev
+        entrypoint:
+            - composer
+            - install
+        depends_on:
+            - php
